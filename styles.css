@@ -1,0 +1,785 @@
+/**
+ * ============================================
+ * ESTILOS MUNDO DIGITAL PREMIUM
+ * Diseño oscuro y moderno
+ * ============================================
+ */
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0f1e 100%);
+    min-height: 100vh;
+    padding: 20px;
+    color: #fff;
+}
+
+/* ==================== LOGIN ==================== */
+.contenedor-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.tarjeta-login {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 60px 45px;
+    border-radius: 24px;
+    border: 2px solid rgba(59, 130, 246, 0.3);
+    box-shadow: 
+        0 0 60px rgba(59, 130, 246, 0.15),
+        0 20px 60px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 480px;
+    backdrop-filter: blur(10px);
+}
+
+/* Logo centrado más grande */
+.login-logo {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #FFC107;
+    box-shadow: 
+        0 0 40px rgba(255, 193, 7, 0.4),
+        0 0 80px rgba(255, 193, 7, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.login-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tarjeta-login h1 {
+    color: #FFC107;
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-shadow: 0 0 30px rgba(255, 193, 7, 0.6);
+}
+
+.subtitulo {
+    text-align: center;
+    color: #3B82F6;
+    margin-bottom: 50px;
+    font-size: 1.05em;
+    font-weight: 300;
+}
+
+.texto-footer {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 0.85em;
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    line-height: 1.6;
+}
+
+/* Mensaje de error */
+.error-message {
+    background: rgba(239, 68, 68, 0.15);
+    border: 1px solid rgba(239, 68, 68, 0.4);
+    color: #FCA5A5;
+    padding: 14px 18px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+/* ==================== FORMULARIOS ==================== */
+.grupo-input {
+    margin-bottom: 30px;
+}
+
+.grupo-input label {
+    display: block;
+    margin-bottom: 12px;
+    color: #FFC107;
+    font-weight: 600;
+    font-size: 0.95em;
+}
+
+.grupo-input input {
+    width: 100%;
+    padding: 16px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid #3B82F6;
+    border-radius: 14px;
+    color: #fff;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.grupo-input input::placeholder {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.grupo-input input:focus {
+    outline: none;
+    border-color: #FFC107;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 20px rgba(255, 193, 7, 0.25);
+}
+
+/* Búsqueda de correos - input más grande, botón más pequeño */
+.grupo-input-busqueda {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.input-busqueda {
+    flex: 1;
+    padding: 16px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid #3B82F6;
+    border-radius: 14px;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.input-busqueda::placeholder {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.input-busqueda:focus {
+    outline: none;
+    border-color: #FFC107;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 20px rgba(255, 193, 7, 0.25);
+}
+
+.btn-buscar {
+    padding: 16px 32px;
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+    color: white;
+    border: none;
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4);
+    transition: all 0.3s;
+    white-space: nowrap;
+}
+
+.btn-buscar:hover {
+    background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(59, 130, 246, 0.6);
+}
+
+/* ==================== BOTONES ==================== */
+.btn-primary {
+    width: 100%;
+    padding: 16px 32px;
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+    color: white;
+    border: none;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    box-shadow: 0 6px 25px rgba(59, 130, 246, 0.4);
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(59, 130, 246, 0.6);
+}
+
+/* ==================== DASHBOARD ==================== */
+.contenedor-dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 25px 35px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgba(59, 130, 246, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.header h1 {
+    color: #FFC107;
+    font-size: 2em;
+    text-shadow: 0 0 30px rgba(255, 193, 7, 0.5);
+    letter-spacing: 2px;
+}
+
+.info-usuario {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.badge {
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+.badge-admin {
+    background: linear-gradient(135deg, #FFC107 0%, #FFA000 100%);
+    color: #000;
+    box-shadow: 0 2px 10px rgba(255, 193, 7, 0.3);
+}
+
+.badge-cliente {
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+    color: white;
+    box-shadow: 0 2px 10px rgba(59, 130, 246, 0.3);
+}
+
+.btn-salir {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.btn-salir:hover {
+    background: linear-gradient(135deg, #DC2626 0%, #B91C1C 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(239, 68, 68, 0.5);
+}
+
+/* ==================== TABS ==================== */
+.tabs {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 12px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    display: flex;
+    gap: 12px;
+    border: 2px solid rgba(59, 130, 246, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 16px 22px;
+    border: none;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tab-btn.activo {
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+}
+
+.tab-btn:hover:not(.activo) {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(59, 130, 246, 0.5);
+}
+
+.tab-contenido {
+    display: none;
+}
+
+.tab-contenido.activo {
+    display: block;
+}
+
+/* ==================== SECCIONES ==================== */
+.seccion {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 35px;
+    border-radius: 20px;
+    border: 2px solid rgba(59, 130, 246, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.seccion h2 {
+    color: #FFC107;
+    margin-bottom: 12px;
+    font-size: 1.8em;
+    text-shadow: 0 0 20px rgba(255, 193, 7, 0.3);
+}
+
+.grupo-input-inline {
+    display: flex;
+    gap: 10px;
+}
+
+.grupo-input-inline input {
+    flex: 1;
+    padding: 14px 18px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid #3B82F6;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.grupo-input-inline input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.grupo-input-inline input:focus {
+    outline: none;
+    border-color: #FFC107;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.3);
+}
+
+.grupo-input-inline button {
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4);
+    transition: all 0.3s;
+}
+
+.grupo-input-inline button:hover {
+    background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(59, 130, 246, 0.6);
+}
+
+/* ==================== ALERTAS ==================== */
+.alerta {
+    padding: 16px 22px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.alerta-error {
+    background: rgba(239, 68, 68, 0.15);
+    border: 1px solid rgba(239, 68, 68, 0.4);
+    color: #FCA5A5;
+}
+
+.alerta-success {
+    background: rgba(16, 185, 129, 0.15);
+    border: 1px solid rgba(16, 185, 129, 0.4);
+    color: #6EE7B7;
+}
+
+.alerta-info {
+    background: rgba(59, 130, 246, 0.15);
+    border: 1px solid rgba(59, 130, 246, 0.4);
+    color: #93C5FD;
+}
+
+/* ==================== TABLAS ==================== */
+.tabla-usuarios,
+.tabla-correos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.tabla-usuarios th,
+.tabla-correos th {
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+    color: white;
+    padding: 15px 18px;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 0.5px;
+}
+
+.tabla-usuarios td,
+.tabla-correos td {
+    padding: 15px 18px;
+    border-bottom: 1px solid rgba(59, 130, 246, 0.1);
+    background: rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.tabla-usuarios tr:hover td,
+.tabla-correos tr:hover td {
+    background: rgba(59, 130, 246, 0.15);
+}
+
+/* Botones en tablas */
+.btn-eliminar,
+.btn-editar,
+.btn-ver {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.btn-eliminar {
+    background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
+    color: white;
+    box-shadow: 0 2px 10px rgba(239, 68, 68, 0.3);
+}
+
+.btn-eliminar:hover {
+    background: linear-gradient(135deg, #DC2626 0%, #B91C1C 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.5);
+}
+
+.btn-editar {
+    background: linear-gradient(135deg, #FFC107 0%, #FFA000 100%);
+    color: #000;
+    box-shadow: 0 2px 10px rgba(255, 193, 7, 0.3);
+}
+
+.btn-editar:hover {
+    background: linear-gradient(135deg, #FFA000 0%, #FF8F00 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(255, 193, 7, 0.5);
+}
+
+.btn-ver {
+    background: linear-gradient(135deg, #06B6D4 0%, #0891B2 100%);
+    color: white;
+    box-shadow: 0 2px 10px rgba(6, 182, 212, 0.3);
+}
+
+.btn-ver:hover {
+    background: linear-gradient(135deg, #0891B2 0%, #0E7490 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(6, 182, 212, 0.5);
+}
+
+/* Agrupar botones de acción */
+.tabla-usuarios td:last-child,
+.tabla-correos td:last-child {
+    white-space: nowrap;
+}
+
+/* ==================== GESTIÓN USUARIOS ==================== */
+.formulario-agregar {
+    background: rgba(59, 130, 246, 0.1);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 35px;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.formulario-agregar h3 {
+    margin-bottom: 20px;
+    color: #3B82F6;
+}
+
+.grupo-inputs-horizontal {
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.grupo-inputs-horizontal .grupo-input {
+    flex: 1;
+    min-width: 250px;
+}
+
+.btn-add {
+    width: 100%;
+    padding: 16px 32px;
+    background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+    transition: all 0.3s;
+}
+
+.btn-add:hover {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.5);
+}
+
+.lista-usuarios h3 {
+    margin-bottom: 20px;
+    color: #3B82F6;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 768px) {
+    .tarjeta-login {
+        padding: 35px 25px;
+    }
+    
+    .tarjeta-login h1 {
+        font-size: 1.8em;
+    }
+    
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .header h1 {
+        font-size: 1.5em;
+    }
+    
+    .tabs {
+        flex-direction: column;
+    }
+    
+    .grupo-inputs-horizontal {
+        flex-direction: column;
+    }
+    
+    .grupo-inputs-horizontal .grupo-input {
+        min-width: 100%;
+    }
+    
+    .tabla-usuarios,
+    .tabla-correos {
+        font-size: 0.9em;
+    }
+}
+
+/* ==================== VER CORREO ==================== */
+.contenedor-ver-correo {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Header del correo */
+.header-correo {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 25px 35px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgba(59, 130, 246, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.header-correo h1 {
+    color: #FFC107;
+    font-size: 1.8em;
+    margin: 0;
+    text-shadow: 0 0 20px rgba(255, 193, 7, 0.3);
+}
+
+/* Botón cerrar */
+.btn-cerrar {
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+}
+
+.btn-cerrar:hover {
+    background: linear-gradient(135deg, #DC2626 0%, #B91C1C 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(239, 68, 68, 0.5);
+}
+
+
+.tarjeta-correo {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 35px;
+    border-radius: 20px;
+    border: 2px solid rgba(59, 130, 246, 0.3);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+/* Información del correo detallada */
+.info-correo-detalle {
+    background: rgba(59, 130, 246, 0.1);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.info-item {
+    display: flex;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.info-item:last-child {
+    border-bottom: none;
+}
+
+.info-label {
+    min-width: 80px;
+    color: #FFC107;
+    font-weight: 600;
+}
+
+.info-valor {
+    flex: 1;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.contenido-correo {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    border-radius: 12px;
+    min-height: 300px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.contenido-correo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.contenido-correo a {
+    color: #3B82F6;
+    text-decoration: underline;
+}
+
+.contenido-correo a:hover {
+    color: #FFC107;
+}
+
+/* Responsive para ver correo */
+@media (max-width: 768px) {
+    .header-correo {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .header-info h1 {
+        font-size: 1.5em;
+    }
+    
+    .tarjeta-correo {
+        padding: 20px;
+    }
+    
+    .info-label {
+        min-width: 100px;
+        font-size: 0.9em;
+    }
+}
+
+/* Botón copiar */
+.btn-copiar {
+    background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 5px;
+    box-shadow: 0 2px 10px rgba(16, 185, 129, 0.3);
+}
+
+.btn-copiar:hover {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.5);
+}
+
+/* Texto de contraseña */
+.password-text {
+    font-family: 'Courier New', monospace;
+    background: rgba(59, 130, 246, 0.1);
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #FFC107;
+}
+
+/* Columna de acciones con botones */
+.acciones-td {
+    white-space: nowrap;
+}
