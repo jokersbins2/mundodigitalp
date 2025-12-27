@@ -323,4 +323,12 @@ function generarTablaCorreos($correos, $email) {
     $html .= '</div>';
     
     return $html;
+
+}
+
+/**
+ * Alias de autenticar() para compatibilidad con index.php
+ */
+function autenticarUsuario($username, $password) {
+    return autenticar($username, $password);
 }
