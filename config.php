@@ -21,15 +21,15 @@ error_reporting(E_ALL);
 // ============================================
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'mundo_digital_premium');
-define('DB_USER', 'root');        // CAMBIAR en servidor real
-define('DB_PASS', 'root');        // CAMBIAR en servidor real
+define('DB_USER', 'mundodigital');        // CAMBIAR en servidor real
+define('DB_PASS', 'MundoDigital2026!');        // CAMBIAR en servidor real
 define('DB_CHARSET', 'utf8mb4');
 
 // ============================================
 // CONFIGURACIÓN DE CORREO IMAP (GMAIL)
 // ============================================
-define('IMAP_USER', 'yobotyobot57@gmail.com');
-define('IMAP_PASS', 'qzuuwoimtzndgiwe');  // App Password de Gmail
+define('IMAP_USER', 'recimundod1994@gmail.com');
+define('IMAP_PASS', 'hqbthiuveatoopkz');  // App Password de Gmail
 define('IMAP_HOST', '{imap.gmail.com:993/imap/ssl/novalidate-cert}INBOX');
 
 // ============================================
@@ -125,4 +125,5 @@ function limpiar($dato) {
     $dato = stripslashes($dato);
     $dato = htmlspecialchars($dato, ENT_QUOTES, 'UTF-8');
     return $dato;
+
 }
